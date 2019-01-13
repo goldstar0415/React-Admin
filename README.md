@@ -2,43 +2,43 @@
 
 [![npm version](https://badge.fury.io/js/adminlte-reactjs.svg)](https://badge.fury.io/js/adminlte-reactjs)
 
-ReactJS version of the original AdminLTE dashboard - https://github.com/almasaeed2010/AdminLTE. This project consists of widgets, charts and other components written in ReactJS. Stylesheets are borrowed from the AdminLTE project. 
+ReactJS version of the original AdminLTE dashboard - https://github.com/goldstar0415/React-Admin. This project consists of widgets, charts and other components written in ReactJS. Stylesheets are borrowed from the AdminLTE project. 
 
 If you use React in your app, you might find some of these components useful!
 
-[View the complete list of available components](https://github.com/booleanhunter/ReactJS-AdminLTE/tree/master/src/components)
+[View the complete list of available components](https://github.com/goldstar0415/React-Admin/tree/master/src/components)
 
 
 ### Some available components in React: 
 
 
-- [ReactJS Timeline](https://github.com/booleanhunter/ReactJS-AdminLTE/tree/master/src/components/#--timeline)
+- [ReactJS Timeline](https://github.com/goldstar0415/React-Admin/tree/master/src/components/#--timeline)
 
     [Click here](http://adminlte.booleanhunter.com/timeline.html) to see it live
 
 
-- [ReactJS Widgets](https://github.com/booleanhunter/ReactJS-AdminLTE/tree/master/src/components)
+- [ReactJS Widgets](https://github.com/goldstar0415/React-Admin/tree/master/src/components)
 
     [Click here](http://adminlte.booleanhunter.com/widgets.html) to see a live preview!
 
-    ![](https://github.com/booleanhunter/ReactJS-AdminLTE/blob/master/screenshots/widgets.png?raw=true)
+    ![](https://github.com/goldstar0415/React-Admin/blob/master/screenshots/widgets.png?raw=true)
 
 
 ##### Widgets will use velocity.js animations instead of the originally used JQuery animations wherever possible, for improved performance across all browsers and devices.
 
 
-[ReactJS Dashboard](https://github.com/booleanhunter/ReactJS-AdminLTE/tree/master/src/pages/dashboardV1)
+[ReactJS Dashboard](https://github.com/goldstar0415/React-Admin/tree/master/src/pages/dashboardV1)
 
 Will soon be populated with charts.
 
-![](https://github.com/booleanhunter/ReactJS-AdminLTE/blob/master/screenshots/dashboard-v1.png?raw=true)
+![](https://github.com/goldstar0415/React-Admin/blob/master/screenshots/dashboard-v1.png?raw=true)
 
 
 More stuff coming soon. Stay tuned!
 
 ### Instructions of Usage :
 - Run `npm install adminlte-reactjs`
-- Include the stylesheets for the components, similar to the [widgets page](https://github.com/booleanhunter/ReactJS-AdminLTE/blob/master/views/widgets.html)
+- Include the stylesheets for the components, similar to the [widgets page](https://github.com/goldstar0415/React-Admin/blob/master/views/widgets.html)
 - Include the library `var reactjsAdminlte = require('adminlte-reactjs')`. You may prefer the AMD style or the import statement.
 - You can now begin using the components like this `var ProfileCard = reactjsAdminlte.ProfileCard`.
 - If you don't need all the components, then you can choose to include only specific ones rather than the entire library. This can reduce your JS bundle size significantly `var StatTile = require('adminlte-reactjs/src/components/stat-tile')`
@@ -49,7 +49,7 @@ More stuff coming soon. Stay tuned!
 
 #### Where can you contribute? (starting from easy to relatively challenging)
 
-- Covering [documentation](https://github.com/booleanhunter/ReactJS-AdminLTE/tree/master/src/components#list-of-components) for all the available components and how to use them (this is the easiest one, but quite important!)
+- Covering [documentation](https://github.com/goldstar0415/React-Admin/tree/master/src/components#list-of-components) for all the available components and how to use them (this is the easiest one, but quite important!)
 - Converting existing components into ES6/ECMAScript 2016 
 - Writing tests for components. Similar to tests written in the [React-Bootstrap](https://github.com/react-bootstrap/react-bootstrap/tree/master/test) project.
 - Reactifying the rest of the widgets, elements and pages from AdminLTE. Here are the steps to do this:
@@ -67,9 +67,9 @@ More stuff coming soon. Stay tuned!
 #### Step 2:
 
 - Pick a [page](https://almsaeedstudio.com/themes/AdminLTE/index2.html) from the AdminLTE project to reactify it, or some widget that hasn't been reactified yet.
-- If the page for it doesn't exist in the repo, create one for it in the [views](https://github.com/booleanhunter/ReactJS-AdminLTE/tree/master/views) folder, and render the page by defining a route for it inside [routes.js](https://github.com/booleanhunter/ReactJS-AdminLTE/blob/master/routes.js).
-- Create the entry point that renders the components inside [/src/pages](https://github.com/booleanhunter/ReactJS-AdminLTE/tree/master/src/pages) folder. Now you can begin writing your components and testing them!
-- To view and test your components on the page, add your entry point in [webpack.config.js](https://github.com/booleanhunter/ReactJS-AdminLTE/blob/master/webpack.config.js). Run `webpack -p` to generate the bundle for the page, and include the bundle and associated vendors for it in the page using `script` tags.
+- If the page for it doesn't exist in the repo, create one for it in the [views](https://github.com/goldstar0415/React-Admin/tree/master/views) folder, and render the page by defining a route for it inside [routes.js](https://github.com/goldstar0415/React-Admin/blob/master/routes.js).
+- Create the entry point that renders the components inside [/src/pages](https://github.com/goldstar0415/React-Admin/tree/master/src/pages) folder. Now you can begin writing your components and testing them!
+- To view and test your components on the page, add your entry point in [webpack.config.js](https://github.com/goldstar0415/React-Admin/blob/master/webpack.config.js). Run `webpack -p` to generate the bundle for the page, and include the bundle and associated vendors for it in the page using `script` tags.
 - `webpack-dev-server` along with React Hot Loader can be used to ease your development workflow. This can be done by installing dev dependencies from `package.json` file. If you haven't, then run `npm install webpack-dev-server` and `npm install react-hot-loader`. Then in your HTML, change your javascript bundles' source paths to point to the webpack-dev-server proxy in your `script` tags. So if you have these bundles for example,
 
 ```html
@@ -92,7 +92,7 @@ This is still a work in progress and will get better over time.
 
 #### Step 3: Including your new components in the library
 After you've finished writing a component and testing it out, you can include it in the library.
-- Place/move your component inside the [/src/components](https://github.com/booleanhunter/ReactJS-AdminLTE/tree/master/src) folder and include it inside `widgets.src.js`.
+- Place/move your component inside the [/src/components](https://github.com/goldstar0415/React-Admin/tree/master/src) folder and include it inside `widgets.src.js`.
 - Run `npm build` to generate the library `reactjsAdminlte.js`. Your component will be included in the library!
 - To make sure that your component works correctly, test it out by including it in the page using the library.
 
